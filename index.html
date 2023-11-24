@@ -1,0 +1,70 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#Images" class="w3-button w3-bar-item">electronics</a>
+  <a href="#" class="w3-button w3-bar-item">Items</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img/electronics6.jpeg"
+  style="width:50%">
+  <img class="mySlides" src="img/electronics4.jpeg"
+  style="width:30%">
+  <img class="mySlides" src="img/electronics 2.jpeg"
+  style="width:50%">
+</section>
+  
+<!-- Electronics Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE ELECTRONICS ITEMS</h2>
+  <p class="w3-opacity"><i>We love electronics devices</i></p>
+  <p class="w3-justify">We have created a fictional electronics website. Now that technology has become advanced life has become more comfortable and easier. There are many electronic devices such as refrigerators, television, mobile, computers and so forth. Each electronic device has its own benefits and uses. One can connect in any corner of the world in just a click of a button.
+  </section>
+
+<!-- Electronics Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Refregerator</p>
+    <img src="img/refregerator.jpeg" alt="Random Name" style="width:30%">
+    <p>Refregerator is the coolest</p>
+  </article>
+  <article class="w3-third">
+    <p>Tubelight</p>
+    <img src="img/electronics4.jpeg" alt="Random Name" style="width:30%">
+    <p>Give us light</p>
+  </article>
+  <article class="w3-third">
+    <p>Iron</p>
+    <img src="img/electronics5.jpeg" alt="Random Name" style="width:30%">
+    <p> Iron is the hottest</p>
+  </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
